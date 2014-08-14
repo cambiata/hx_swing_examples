@@ -1,0 +1,12 @@
+-cp src
+-java deployTwoWindows
+-main hxswing.TwoWindowsExample
+-D haxe3
+
+# after Haxe has compiled into Java lets run the code
+--next
+-cmd cd deployTwoWindows/src/
+-cmd cd ../
+
+# run our application
+-cmd java -jar deployTwoWindows.jar
