@@ -9,4 +9,4 @@
 -cmd cd ../
 
 # run our application
--cmd java -jar deployTwoWindows.jar
+-cmd java -jar TwoWindowsExample.jar
