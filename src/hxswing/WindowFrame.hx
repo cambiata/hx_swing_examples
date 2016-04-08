@@ -2,7 +2,7 @@
 
 package hxswing;
 
-import javax.swing.JFrame;
+import java.javax.swing.JFrame;
 import java.awt.Color;
 import java.lang.System;
 import java.awt.Container;
@@ -21,7 +21,7 @@ import java.awt.Graphics2D;
 
 // Surface specific imports
 import java.awt.RenderingHints;
-import javax.swing.JPanel;
+import java.javax.swing.JPanel;
 
 
 class WindowFrame extends JFrame
@@ -94,7 +94,7 @@ class Surface extends JPanel {
     
     public function new(){ super( true ); }
     
-    @:overload public function paintComponent( g: Graphics ){
+    @:overload override public function paintComponent( g: Graphics ){
         super.paintComponent( g );
         var g2D: Graphics2D = cast g;
         g2D.setRenderingHint( RenderingHints.KEY_ANTIALIASING
